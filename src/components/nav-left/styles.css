@@ -3,6 +3,10 @@
     color: white;
     min-height: 100vh;
 }
+.container {
+    float: right;
+    padding: 0 2em;
+}
 
 nav > * {
     display: block;
@@ -13,15 +17,15 @@ nav > * {
     font-weight: 500;
 }
 
-span {
+.nav-element {
     display: flex;
     align-items: center;
     height: 2.4em;
     width: fit-content;
-    padding: 0 0.7em;
+    padding: 0.2em 0.7em;
 }
 
-span:hover {
+.nav-element:hover {
     color: #1da1f2;
     border-radius: 1.5em;
     background: #192734;
@@ -37,13 +41,13 @@ a {
 }
 
 header svg {
-    height: 2em;
     margin-top: 0.7em;
-    margin-left: 1em;
+    margin-left: 0.8em;
+    padding-bottom: 0.8em;
 }
 
 nav svg {
-    height: 1.3em;
+    height: 1.5em;
     margin-right: 1em;
 }
 

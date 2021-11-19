@@ -1,0 +1,10 @@
+.home {
+
+}
+
+.header {
+    padding: 0.6em 1em;;
+    border: 0.5px solid gray;
+    border-radius: 1px;
+    background: #171717;
+}

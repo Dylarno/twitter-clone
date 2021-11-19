@@ -22,25 +22,24 @@ export const NavLeft = () => {
                     </NavLink>
 
                     <NavLink to="/">
-                        <span>{homeIcon} Home</span>
+                        <span className="nav-element">{homeIcon} Home</span>
                     </NavLink>
 
                     <NavLink to="/profile">
-                    <span>{profileIcon} Profile</span>
+                    <span className="nav-element">{profileIcon} Profile</span>
                     </NavLink>
 
-                    <span>{exploreIcon} Explore</span>
-                    <span>{notificationsIcon} Notifications</span>
-                    <span>{messagesIcon} Messages</span>
-                    <span>{bookmarksIcon} Bookmarks</span>
-                    <span>{listsIcon} Lists</span>
-                    <span>{moreIcon} More</span>
+                    <span className="nav-element">{exploreIcon} Explore</span>
+                    <span className="nav-element">{notificationsIcon} Notifications</span>
+                    <span className="nav-element">{messagesIcon} Messages</span>
+                    <span className="nav-element">{bookmarksIcon} Bookmarks</span>
+                    <span className="nav-element">{listsIcon} Lists</span>
+                    <span className="nav-element">{moreIcon} More</span>
                 </nav>
 
                 <button className="tweet">Tweet</button>
 
                 <Footer avatar="https://pbs.twimg.com/profile_images/1268673564800139267/Nph2nyZ6_400x400.jpg" displayname="Dylan" username="@dylanmede_"></Footer>
-
             </div>
         </div>
     );

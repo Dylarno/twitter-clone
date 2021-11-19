@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import { NavLeft } from './components/nav-left/index'
+import { Home } from './components/home';
 
 const App = () => {
   return (
@@ -15,14 +16,16 @@ const App = () => {
       <div className="App">
 
         <NavLeft />
-        <switch>
-          <Route path="/" exact>Home</Route>
-          <Route path="/profile">Profile</Route>
-        </switch>
+        
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
 
-        <div className="right-div">
-          RightDiv
-        </div>
+          <Route path="/profile">Profile</Route>
+        </Switch>
+
+        <div className="right-div" />
       </div>
     </BrowserRouter>
   )

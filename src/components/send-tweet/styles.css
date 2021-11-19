@@ -1,0 +1,57 @@
+.send-tweet {
+    padding: 0.8em;
+    border: 0.5px solid gray;
+    border-radius: 1px;
+}
+
+.top {
+    display: flex;
+}
+
+.text-box {
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+
+.type-tweet {
+    height: 3em;
+    width: 95%;
+    background: #171717;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    font-size: x-large;
+    resize: none;
+}
+
+.buttons {
+ padding: 0.5em;
+}
+
+.avatar-tweet {
+    height: 3em;
+    width: 4em;
+    margin-top: 1em;
+}
+
+.buttons svg {
+    height: 1.3em;
+    margin-right: 1em;
+}
+
+.tweet-container {
+    float: right;
+}
+
+.tweet-small {
+    display: block;
+    background: #1da1f2;
+    color: white;
+    height: 2em;
+    width: 5em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 1.5em;
+    cursor: pointer;
+}

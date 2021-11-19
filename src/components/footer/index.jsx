@@ -5,8 +5,8 @@ export const Footer = (props) => {
 
     return (
     <footer>
-        <button className="account">
-            <div className="avatar">
+        <div className="account">
+            <div className="avatar-footer">
                 <img src={avatar} />
             </div>
 
@@ -14,7 +14,7 @@ export const Footer = (props) => {
                 <div className="displayname">{displayname}</div>
                 <div className="username">{username}</div>
             </div>
-        </button>
+        </div>
     </footer>
     )
 }
