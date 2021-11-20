@@ -1,9 +1,9 @@
 import './styles.css'
 import { SendTweet } from '../send-tweet';
+import { Tweet } from '../tweet';
 
 export const Home = () => {
     
-
     return (
         <div className="home">
             <div className="header">
@@ -13,6 +13,13 @@ export const Home = () => {
 
             <div className="header-div">
                 <SendTweet />
+            </div>
+
+            <div className="feed-container">
+
+                <Tweet />
+                <Tweet />
+                <Tweet />
             </div>
         </div>
     );

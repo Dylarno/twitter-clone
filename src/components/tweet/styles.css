@@ -1,0 +1,55 @@
+.tweet-div {
+    padding: 0.8em;
+    border: 0.5px solid gray;
+    border-radius: 1px;
+}
+
+.avatar-tweet {
+    height: 3em;
+    width: 4em;
+    margin-top: 1em;
+    padding-left: 0.5em;
+}
+
+.main {
+    display: flex;
+}
+
+.text-container {
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+
+.tweet-text {
+    height: 6em;
+    width: 95%;
+    background: #171717;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    font-size: small;
+    resize: none;
+
+    border: none;
+    overflow: hidden;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.account-info {
+    display: flex;
+}
+
+.d-name{
+    text-align: left;
+    font-weight: 700;
+    padding-right: 0.5em;
+}
+
+.u-name{
+    color: gray;
+}
