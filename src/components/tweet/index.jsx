@@ -1,24 +1,24 @@
 import './styles.css';
 
-export const Tweet = () => {
-
+export const Tweet = (props) => {
+    const {avatar, displayname, username, tweetText} = props;
 
     return (
         <div className="tweet-div">
 
             <div className="main">
                 <div className="avatar-tweet">
-                    <img className="avatar-picture" src="https://pbs.twimg.com/profile_images/1268673564800139267/Nph2nyZ6_400x400.jpg" />
+                    <img className="avatar-picture" src={avatar} />
                 </div>
 
                     <div className="text-container">
 
                         <div className="account-info">
-                            <div className="d-name">Dylan</div>
-                            <div className="u-name">@dylanmede</div>
+                            <div className="d-name">{displayname}</div>
+                            <div className="u-name">{username}</div>
                         </div>
                         
-                        <textarea className="tweet-text" type="text" rows="5" readOnly>Tomas is cute, Mark is cute, Fred is cute, Quinn is cute, Dylan is cute. Tomas is cute, Mark is cute, Fred is cute, Quinn is cute, Dylan is cute. Tomas is cute, Mark is cute, Fred is cute, Quinn is cute, Dylan is cute. Tomas is cute, Mark is cute, Fred is cute, Quinn is cute, Dylan is cute.</textarea>
+                        <textarea className="tweet-text" type="text" rows="5" readOnly>{tweetText}</textarea>
                     
                     </div>
             </div>
