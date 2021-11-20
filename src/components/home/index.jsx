@@ -1,8 +1,24 @@
 import './styles.css'
 import { SendTweet } from '../send-tweet';
 import { Tweet } from '../tweet';
+import { useEffect, useState, useContext } from 'react';
+import { GlobalContext } from '../context/globalContext';
 
 export const Home = () => {
+
+    const globalState = useContext(GlobalContext);
+
+    const [tweetElements, setTweetElements] = useState([]);
+
+    useEffect (() => {
+        const tweetElems = globalState.tweets.map( () => {
+            return (
+                <Tweet />
+            )
+        })
+        setTweetElements(tweetElems);
+        console.log("Added");
+    }, [globalState.tweets])
     
     return (
         <div className="home">
@@ -16,10 +32,7 @@ export const Home = () => {
             </div>
 
             <div className="feed-container">
-
-                <Tweet />
-                <Tweet />
-                <Tweet />
+                {tweetElements}
             </div>
         </div>
     );

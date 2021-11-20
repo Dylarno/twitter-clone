@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
+import { Tweet } from '../tweet';
 
 export const GlobalContext = React.createContext(
     {
-        tweets: [],
-        addTweet: () => {},
+        tweets: [<Tweet />, <Tweet />, <Tweet />],
+        addTweet: () => {console.log("default")},
     }
 );
 
@@ -12,9 +13,9 @@ export const GlobalContextProvider = (props) => {
 
     const [tweets, setTweets] = useState([]);
 
-    const addTweet = (tweets) => {
+    const addTweet = (tweet) => {
         let oldTweets = tweets;
-        oldTweets.push(tweets);
+        oldTweets.unshift(tweet);
         setTweets(oldTweets);
     }
 
